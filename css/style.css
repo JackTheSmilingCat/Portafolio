@@ -1,0 +1,170 @@
+/* General */
+body {
+    font-family: 'Open Sans', sans-serif; /* Tipografía de GoogleFonts */
+    margin: 0;
+    padding: 0;
+    background-color: #f4ede4; /* Pastel crema */
+    color: #4e4b47; /* Café oscuro */
+}
+
+/* Encabezado */
+header {
+    background-color: #8b7765; /* Café pastel */
+    color: #ffffff;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 40px;
+    font-weight: 700;
+    margin: 0;
+}
+
+header nav {
+    margin-top: 10px;
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+header nav ul li {
+    display: inline;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+header nav ul li a:hover {
+    color: #d9c2b0; /* Café claro */
+}
+
+/* Secciones */
+section {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+section h1, section h2 {
+    color: #2d572c; /* Verde pastel oscuro */
+}
+
+section p {
+    margin: 20px auto;
+    max-width: 800px;
+    line-height: 1.8;
+}
+
+/* Acerca de mí */
+#acerca {
+    background-color: #f4efe8; /* Pastel más claro */
+}
+
+/* Servicios */
+#servicios div {
+    margin: 20px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+#servicios i {
+    font-size: 50px;
+    color: #2d572c; /* Verde pastel oscuro */
+}
+
+#servicios p {
+    color: #4e4b47; /* Café oscuro */
+    text-align: left;
+}
+
+/* Portafolio */
+#portfolio .portfolio-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+}
+
+#portfolio .portfolio-grid img {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out;
+}
+
+#portfolio .portfolio-grid a:hover img {
+    transform: scale(1.05);
+}
+
+/* Contacto */
+#contacto form {
+    max-width: 600px;
+    margin: auto;
+    text-align: left;
+}
+
+#contacto label {
+    display: block;
+    margin-bottom: 8px;
+    color: #2d572c; /* Verde pastel oscuro */
+}
+
+#contacto input, #contacto textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 2px solid #d9c2b0; /* Café claro */
+    border-radius: 8px;
+}
+
+#contacto button {
+    background-color: #8b7765; /* Café pastel */
+    color: #ffffff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+#contacto button:hover {
+    background-color: #6e5b4d; /* Café oscuro */
+}
+
+/* Footer */
+footer {
+    background-color: #8b7765; /* Café pastel */
+    color: #ffffff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Responsiveness */
+@media (max-width: 768px) {
+    header nav ul {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    #servicios div {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    #portfolio .portfolio-grid {
+        grid-template-columns: 1fr;
+    }
+}

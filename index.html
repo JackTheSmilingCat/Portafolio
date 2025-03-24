@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio - Isaac</title>
+    <link rel="stylesheet" href="bootstrap.css">
+    <link rel="stylesheet" href="bootstrap-custom.css">
+    <link rel="stylesheet" href="line-awesome.css">
+    <link rel="stylesheet" href="fancybox.css">
+    <link rel="stylesheet" href="css/style.css"> <!-- Estilos personalizados -->
+    <script src="wow.js"></script>
+    <meta name="description" content="Portafolio profesional de Isaac - Diseño web, animación, edición de video y mucho más.">
+    <meta name="keywords" content="Isaac, Portafolio, Diseño Web, Animación, Edición de Video, Servicios, Contacto">
+</head>
+<body>
+    <header>
+        <h1>Isaac</h1>
+        <nav>
+            <ul>
+                <li><a href="#acerca">Acerca de mí</a></li>
+                <li><a href="#servicios">Servicios</a></li>
+                <li><a href="#portafolio">Portafolio</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="acerca">
+        <article>
+            <h2>Acerca de mí</h2>
+            <p>¡Hola! Soy Isaac, un apasionado estudiante de Animación y Diseño Digital. Actualmente estoy cursando mi tercer año de carrera, desarrollando habilidades en guionismo, movimientos de cámara, ángulos de animación, y un poco de programación. Me encanta explorar la creatividad y aportar soluciones únicas.</p>
+        </article>
+    </section>
+
+<section id="servicios">
+    <h2>Servicios</h2>
+    <div class="service">
+        <article>
+            <i class="la la-code"></i>
+            <div>
+                <h3>Diseño Web</h3>
+                <p>Desarrollamos sitios web únicos, optimizados para cualquier dispositivo, garantizando funcionalidad y diseño estético.</p>
+            </div>
+        </article>
+        <article>
+            <i class="la la-camera"></i>
+            <div>
+                <h3>Animación</h3>
+                <p>Creación de animaciones dinámicas y fluidas, adaptadas a tus necesidades y objetivos creativos.</p>
+            </div>
+        </article>
+        <article>
+            <i class="la la-film"></i>
+            <div>
+                <h3>Edición de Video</h3>
+                <p>Transformamos tus grabaciones en historias visuales impactantes, con técnicas de edición avanzadas.</p>
+            </div>
+        </article>
+        <article>
+            <i class="la la-icons"></i>
+            <div>
+                <h3>Creación de Iconos</h3>
+                <p>Diseñamos elementos visuales distintivos para fortalecer la identidad de tu marca o proyecto.</p>
+            </div>
+        </article>
+    </div>
+</section>
+
+
+    <section id="portfolio">
+        <h2>Portafolio de Proyectos</h2>
+        <div class="portfolio-grid">
+            <a href="imagenes/logo-grande.jpg" data-fancybox="gallery" data-caption="Logo diseñado en la universidad">
+                <img src="imagenes/logo-pequeño.jpg" alt="Logo">
+            </a>
+            <a href="imagenes/afiche-grande.jpg" data-fancybox="gallery" data-caption="Afiche para evento cultural">
+                <img src="imagenes/afiche-pequeño.jpg" alt="Afiche">
+            </a>
+            <a href="imagenes/banner-grande.jpg" data-fancybox="gallery" data-caption="Banner promocional">
+                <img src="imagenes/banner-pequeño.jpg" alt="Banner">
+            </a>
+        </div>
+    </section>
+
+    <section id="contacto">
+        <h2>Contacto</h2>
+        <form action="/enviar" method="post">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+            <br>
+            <label for="correo">Correo:</label>
+            <input type="email" id="correo" name="correo" required>
+            <br>
+            <label for="mensaje">Mensaje:</label>
+            <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+            <br>
+            <button type="submit">Enviar</button>
+        </form>
+        <div class="redes-sociales">
+            <p>Sígueme en:</p>
+            <a href="https://facebook.com" target="_blank"><i class="la la-facebook"></i></a>
+            <a href="https://twitter.com" target="_blank"><i class="la la-twitter"></i></a>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Isaac. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
